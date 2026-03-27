@@ -36,7 +36,7 @@ export function renderLogin(container: HTMLElement, onLoginSuccess: () => void) 
         <div id="error-message" style="color: var(--danger); text-align: center; margin-top: 1rem; min-height: 24px; font-weight: 500;"></div>
         
         <div style="margin-top: 2rem; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;" class="text-center text-secondary animate-fade-in-up delay-3">
-          <small style="opacity: 0.8;">Test Accounts:<br/>good@student.com | average@student.com | dull@student.com<br/>Password: 123456</small>
+          <small style="opacity: 0.8;">Test Accounts:<br/>prashanth@trkcet.com | karthikeya@tkrcet.com | Abhiram@tkrcet.com<br/>Password: 123456</small>
         </div>
       </div>
     </div>
