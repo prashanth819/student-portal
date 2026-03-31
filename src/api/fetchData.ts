@@ -37,7 +37,7 @@ export async function fetchStudentsData(): Promise<StudentData[]> {
   const res = await fetch(STUDENTS_API);
   if (!res.ok) throw new Error('Failed to fetch students data');
   const data: StudentData[] = await res.json();
-  
+
   data.forEach(student => {
     if (student.login.email === 'good@student.com') {
       student.login.email = 'prashanth@trkcet.com';
@@ -46,8 +46,8 @@ export async function fetchStudentsData(): Promise<StudentData[]> {
       student.login.email = 'karthikeya@tkrcet.com';
       student.profile.name = 'Karthikeya';
     } else if (student.login.email === 'dull@student.com') {
-      student.login.email = 'Abhiram@tkrcet.com';
-      student.profile.name = 'Abhi Ram';
+      student.login.email = 'tejeshkumar@tkrcet.com';
+      student.profile.name = 'Tejesh Kumar';
     }
   });
 
