@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>shopping cart</title>
+    <!--bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    </head>
+    <body class="bg-light">
+    <div class="container mt-4">
+        <h2class="text-center text-primary">
+         electronics shoppingcart
+        </h2>
+        <divclass="row-mt-4">
+            <!--product1-->
+            <div class="col-md-4">
+                <divclass="card">
+                    <img src="https://via.placeholder.com/250*180?text=laptop"class="card-img-top">
+                    <div class="card-body">
+                        <h5>laptop</h5>
+                        <p>price:₹50000</p>
+                        <button class="btn btn-success"onclick="addToCart('laptop',50000)">
+                            add to cartg
+                        </button>
+                    </div>
+            </div>
+        </div>
+        <!--product2-->
+        <div class="col-md-4">
+            <div class="card">
+                <imp src="https://via.placeholder.com/250*180?text=mobile"class="card-img-top">
+                <div class="card-body">
+                    <h5> mobile </h5>
+                    <p> price :₹20000</p>
+                    <button class="btn btn-success"onclick="addToCart('mobile',20000)">
+                        add to card 
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--product3-->
+        <div class="col-md-4">
+            <div class="card">
+                <imp src="https://via.placeholder.com/250*180?text="headphones"class="card-img-top">
+                <div class="card-body">
+                    <h5> headphones </h5>
+                    <p> price :₹3000</p>
+                    <button class="btn btn-success"onclick="addToCart('headphones',3000)">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <h3>cart items</h3>
+      <ul id="cart"class="list-group mb-3"></ul>
+      <h4>total=₹<spanid="total">0</spanid></h4>
+   </div>
+   <script>
+    let total=0;
+    function addToCart(name,price)
+    {
+        let item=document.createElement("li");
+        item.className="list-group-item";
+        item.innerHTML=name+"-₹"+price;
+        document.getElementByld("cart").appendchild(item);
+        total=total+price;
+        document.getElementByld("total").innerHTML=total;
+    }
+</script>
+</body>
+</html>
+
+
+
+
