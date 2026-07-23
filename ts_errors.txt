@@ -1,0 +1,5 @@
+src/components/Dashboard.ts(139,69): error TS6133: 'academic' is declared but its value is never read.
+src/components/Dashboard.ts(214,50): error TS6133: 'user' is declared but its value is never read.
+src/components/Dashboard.ts(262,78): error TS6133: 'academic' is declared but its value is never read.
+src/components/Dashboard.ts(322,49): error TS6133: 'user' is declared but its value is never read.
+src/components/Dashboard.ts(322,68): error TS6133: 'academic' is declared but its value is never read.
